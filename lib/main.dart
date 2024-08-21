@@ -1,9 +1,10 @@
+import 'package:assi12/text_to_speech.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'rflutter_alert.dart';
 void main(){
 
-  runApp(MaterialApp(home: Myapp()));
+  runApp(MaterialApp(home: Myapp(),debugShowCheckedModeBanner: false,));
 }
 class Myapp extends StatefulWidget {
   const Myapp({super.key});
@@ -13,13 +14,8 @@ class Myapp extends StatefulWidget {
 class _MyappState extends State<Myapp> {
   List<Map>item=[
     {"name":"Library 1", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 2", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 3", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 4", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 5", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 6", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 7", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 8", "library":"rflutter_alert", "page":rflutter_alert(),},
+    {"name":"Library 2", "library":"text_to_speech", "page":texttospeech(),},
+
   ];
   @override
   Widget build(BuildContext context) {

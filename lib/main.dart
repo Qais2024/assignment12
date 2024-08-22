@@ -1,4 +1,6 @@
-import 'package:assi12/text_to_speech.dart';
+import 'package:assi12/photo_view.dart';
+import 'package:assi12/shimmer.dart';
+import 'package:assi12/spinkit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'rflutter_alert.dart';
@@ -14,7 +16,9 @@ class Myapp extends StatefulWidget {
 class _MyappState extends State<Myapp> {
   List<Map>item=[
     {"name":"Library 1", "library":"rflutter_alert", "page":rflutter_alert(),},
-    {"name":"Library 2", "library":"text_to_speech", "page":texttospeech(),},
+    {"name":"Library 2", "library":"Photo_view", "page":abc(),},
+    {"name":"Library 3", "library":"flutter_Spinkit", "page":spinkit(),},
+    {"name":"Library 4", "library":"Shimmer", "page":adf()},
 
   ];
   @override
